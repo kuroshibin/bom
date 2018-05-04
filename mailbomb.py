@@ -8,6 +8,7 @@ import smtplib
 import getpass
 import sys
 import time
+import random
 
 print '                                                                    '
 print '                                                                    '
@@ -44,6 +45,10 @@ to = raw_input('\nTo: ')
 print '    '
 
 body = raw_input('Message: ')
+
+print '    '
+
+bodyMessage = str(random.randint(0,999999999999999)).zfill(15)
 
 print '    '
 
